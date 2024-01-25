@@ -21,5 +21,10 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('typelodgings/', include('typelodgings.urls')),    
+    path('typelodgings/', include('typelodgings.urls')),
+    path('lodgings/', include('lodgings.urls')),
+    path('typedocuments/', include('typedocuments.urls')),
+    path('costumers/', include('costumers.urls')),
+    path('facilities/', include('facilities.urls')),
+    path('facilodgings/', include('facilodgings.urls')),
 ]
